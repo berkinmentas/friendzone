@@ -20,7 +20,7 @@ router.get("/users", userAuth, (req, res) => {
   try {
     return res.json({
       error: false,
-      message: "Userlar geldi",
+      message: "Middleware test passed",
     });
   } catch {
     return res.json({
