@@ -4,6 +4,7 @@ const routes = require("./routes/route");
 const port = 3000;
 const connectDB = require("./connection.js"); // db.js dosyasını import edin
 const bodyParser = require("body-parser");
+require("dotenv").config();
 connectDB();
 
 app.use(bodyParser.json());
